@@ -39,7 +39,7 @@ function addCityToDOM(id, city, description, image) {
   colDiv.innerHTML = `
        <a id=${id} href="pages/adventures/?city=${id}">
            <div class="tile text-white">
-                <img class="img-fluid" src=${image} />
+                <img class=img-fluid" src=${image} />
                 <div class="tile-text text-center">
                    <h5>${city}</h5>
                     <div>${description}</div>
