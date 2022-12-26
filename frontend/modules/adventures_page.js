@@ -183,22 +183,17 @@ function generateFilterPillsAndUpdateDOM(filters) {
   category.forEach((item) => {
     const newDiv = document.createElement("div");
     newDiv.classList.add("category-filter");
+    newDiv.setAttribute('id', `${item}`);
     newDiv.innerHTML = `
         <div>${item}</div>
-        <div class="close-btn-${item} close-btn">x</div>
+        <div id="btn-${item}" class= "close-btn" onclick="closePill(event)" style="cursor:pointer">x</div>
     `;
 
     categoryList.append(newDiv);
   });
-
-
-  const durationSelect = document.querySelector('#duration-select');
-  durationSelect.value = filters.duration;
-  //   const closebtn = document.querySelector('.close-btn');
-  // closebtn.addEventListener('click', ()=>{
-
-  // })
 }
+
+
 
 export {
   getCityFromURL,
@@ -210,4 +205,5 @@ export {
   saveFiltersToLocalStorage,
   getFiltersFromLocalStorage,
   generateFilterPillsAndUpdateDOM,
+
 };
