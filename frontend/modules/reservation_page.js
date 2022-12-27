@@ -85,7 +85,7 @@ function addReservationToTable(reservations) {
           <td scope="col">${date}</td>
           <td scope="col">${ele.price}</td>
           <td scope="col">${dateNTime}</td>
-          <td scope="col" id = "${ele.id}"><a href="/frontend/pages/adventures/detail/?adventure=${ele.adventure}" class="reservation-visit-button">Visit Adventure</a></td>
+          <td scope="col" id = "${ele.id}"><a href="../detail/?adventure=${ele.adventure}" class="reservation-visit-button">Visit Adventure</a></td>
           `;
 
           tbody.append(trow);
