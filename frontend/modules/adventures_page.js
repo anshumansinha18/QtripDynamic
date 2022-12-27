@@ -205,5 +205,4 @@ export {
   saveFiltersToLocalStorage,
   getFiltersFromLocalStorage,
   generateFilterPillsAndUpdateDOM,
-
 };
