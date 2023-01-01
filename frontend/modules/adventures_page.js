@@ -4,7 +4,7 @@ import config from "../conf/index.js";
 function getCityFromURL(search) {
   // TODO: MODULE_ADVENTURES
   // 1. Extract the city id from the URL's Query Param and return it
-
+   console.log(search);
   const indexOfEq = search.indexOf("=");
   const res = search.slice(indexOfEq + 1);
   return res;
@@ -14,7 +14,7 @@ function getCityFromURL(search) {
 async function fetchAdventures(city) {
   // TODO: MODULE_ADVENTURES
   // 1. Fetch adventures using the Backend API and return the data
-
+   
   try {
     const url = `${config.backendEndpoint}/adventures?city=${city}`;
 
